@@ -31,3 +31,12 @@ class TestRoom(unittest.TestCase):
         self.assertIn(self.song_2, self.room_1.playlist)
         self.assertIn(self.song_4, self.room_1.playlist)
         self.assertIn(self.song_6, self.room_1.playlist)
+
+    def test_room_can_add_song(self):
+        self.room_1.add_song_to_playlist(self.song_3)
+        self.assertIn(self.song_3, self.room_1.playlist)
+
+    def test_room_can_remove_song(self):
+        self.room_1.add_song_to_playlist(self.song_5)
+        self.room_1.remove_song_from_playlist(self.song_5)
+        self.assertNotIn(self.song_5, self.room_1.playlist)
