@@ -1,5 +1,5 @@
 class Room:
-    def __init__(self, room_number, free_spaces, playlist):
+    def __init__(self, room_number, capacity, playlist):
         self.room_number = room_number
-        self.free_spaces = free_spaces
+        self.capacity = capacity
         self.playlist = playlist

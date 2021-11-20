@@ -6,6 +6,7 @@ class TestSong(unittest.TestCase):
     def setUp(self):
         self.song_1 = Song("Life on Mars", "David Bowie", 3.48)
         
+        
 
     def test_song_title(self):
         expected = "Life on Mars"
