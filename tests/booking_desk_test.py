@@ -35,7 +35,7 @@ class TestBookingDesk(unittest.TestCase):
         actual = self.booking_desk.till
         self.assertEqual(expected, actual)
 
-    def test_booking_desk_make_booking__party_size_fits_1_room(self):
+    def test_booking_desk_make_booking(self):
         self.booking_desk.make_booking(self.guest_1, [self.guest_2, self.guest_3, self.guest_4, self.guest_5], 4)
 
         self.assertEqual(250.00, self.booking_desk.till)

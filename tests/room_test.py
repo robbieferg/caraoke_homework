@@ -11,9 +11,7 @@ class TestRoom(unittest.TestCase):
         self.song_4 = Song("Ocean Man", "Ween", 2.07)
         self.song_5 = Song("Mississippi Queen", "Mountain", 2.30)
         self.song_6 = Song("Dancing Queen", "Abba", 3.52)
-        self.song_7 = Song("Sweet Caroline", "Neil Diamond", 3.21)
-        self.song_8 = Song("Don't Stop Me Now", "Queen", 3.29)
-        self.song_9 = Song("Wannabe", "Spice Girls", 2.52)
+        
         self.room_1 = Room(1, 12, [self.song_2, self.song_4, self.song_6])
 
 
